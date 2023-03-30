@@ -1,5 +1,3 @@
-import sys 
-import os
 import yaml
 import flask
 
@@ -30,7 +28,7 @@ def fetch_website(urllib_version, url):
  
     try: 
         http = urllib.PoolManager()
-        r = http.request('GET', url)
+        http.request('GET', url)
     except:
         print('Exception')
 
