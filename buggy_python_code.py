@@ -29,7 +29,7 @@ def fetch_website(urllib_version, url):
         urlib_v = '3'
     else:
         return
-    exec(f"import urllib{urllib_version} as urllib", globals())
+    exec(f"import urllib{urllib_v} as urllib", globals())
     # Fetch and print the requested URL
  
     try: 
